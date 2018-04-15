@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Екатерина Петрова](https://up.htmlacademy.ru/adaptive/14/user/525843).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Зубов] (https://htmlacademy.ru/profile/serj).
 
 ---
 
