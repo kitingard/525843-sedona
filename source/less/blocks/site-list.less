@@ -1,0 +1,51 @@
+.site-list {
+  position: relative;
+}
+
+.site-list__wrapper {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-list__item {
+  min-height: 56px;
+  padding: 20px 0;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  border-top: 1px solid #9ac2db;
+  border-bottom: 1px solid #678fa8;
+}
+
+.site-list__item__link {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.site-list__button {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  display: block;
+  width: 23px;
+  height: 22px;
+  background-color: #81b3d2;
+  border: none;
+}
+
+.site-list__button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 23px;
+  height: 21px;
+  background-image: url("../img/icon-cross.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
