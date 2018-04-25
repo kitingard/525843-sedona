@@ -30,61 +30,67 @@
       <section class="features">
         <h2 class="features__title">СЕДОНА — небольшой городок в Аризоне, заслуживающий большего!</h2>
         <p class="features__subtitle">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-        <ul class="features__list benefits-list">
-          <li class="benefits-list__item benefits-list__item--special">
-            <h3 class="benefits-list__item__title">Настоящий городок</h3>
-            <span class="benefits-list__item__number">— №1 —</span>
-            <p class="benefits-list__item__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
-            <img src="img/town.jpg" width="320" height="260" alt="Виды города">
-            <article class="promo">
-              <ul class="promo__list">
-                <li class="promo__item">
-                  <h3 class="promo__item__title">Жильё</h3>
-                  <p class="promo__item__text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-                </li>
-                <li class="promo__item">
-                  <h3 class="promo__item__title">Сувениры</h3>
-                  <p class="promo__item__text">Не только китайского, но и местного производства!</p>
-                </li>
-                <li class="promo__item">
-                  <h3 class="promo__item__title">Еда</h3>
-                  <p class="promo__item__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-                </li>
-              </ul>
-            </article>
-          </li>
-          <li class="benefits-list__item benefits-list__item--special">
-            <h3 class="benefits-list__item__title">Там есть мост дьявола</h3>
-            <span class="benefits-list__item__number">— №2 —</span>
-            <p class="benefits-list__item__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-            <img src="img/bridge-of-death.jpg" width="320" height="260" alt="Мост смерти">
-          </li>
+        <article class="attraction">
+          <div class="attraction__content attraction__content--town">
+            <h3 class="attraction__title">Настоящий городок</h3>
+            <span class="attraction__text">— №1 —</span>
+            <p class="attraction__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
+          </div>
+          <img class="attraction__img" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Виды города">
+        </article>
+        <article class="promo">
+          <ul class="promo__list">
+            <li class="promo__item">
+              <h3 class="promo__item__title">Жильё</h3>
+              <p class="promo__item__text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            </li>
+            <li class="promo__item">
+              <h3 class="promo__item__title">Сувениры</h3>
+              <p class="promo__item__text">Не только китайского, но и местного производства!</p>
+            </li>
+            <li class="promo__item">
+              <h3 class="promo__item__title">Еда</h3>
+              <p class="promo__item__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </li>
+          </ul>
+        </article>
+        <article class="attraction">
+          <div class="attraction__content attraction__content--bridge">
+            <h3 class="attraction__title">Там есть мост дьявола</h3>
+            <span class="attraction__text">— №2 —</span>
+            <p class="attraction__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          </div>
+          <img class="attraction__img" src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Мост смерти">
+        </article>
+        <ul class="benefits-list">
           <li class="benefits-list__item">
             <h3 class="benefits-list__item__title">Небольшая площадь</h3>
-            <span class="benefits-list__item__number">— №3 —</span>
+            <span class="benefits-list__item__text">— №3 —</span>
             <p class="benefits-list__item__text">Все интересные места находятся очень близко</p>
           </li>
           <li class="benefits-list__item">
             <h3 class="benefits-list__item__title">Красивая дорога</h3>
-            <span class="benefits-list__item__number">— №4 —</span>
+            <span class="benefits-list__item__text">— №4 —</span>
             <p class="benefits-list__item__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
           <li class="benefits-list__item">
             <h3 class="benefits-list__item__title">Мало туристов</h3>
-            <span class="benefits-list__item__number">— №5 —</span>
+            <span class="benefits-list__item__text">— №5 —</span>
             <p class="benefits-list__item__text">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
         </ul>
       </section>
 
       <section class="search">
-        <h2 class="search__title">Заинтересовались?</h2>
-        <p class="search__subtitle">Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
+        <div class="search__wrapper">
+          <h2 class="search__title">Заинтересовались?</h2>
+          <p class="search__subtitle">Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
+        </div>
         <a class="search__button button" href="#">Найти гостиницу</a>
       </section>
 
       <div class="map">
-        <img class="map__img" src="img/map.jpg" width="320" height="350" alt="Карта">
+        <img class="map__img" src="img/bg-map-mobile@1x.jpg" width="320" height="350" alt="Карта">
       </div>
     </main>
 
