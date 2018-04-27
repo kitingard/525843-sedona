@@ -3,21 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона - поиск гостиницы</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/logo.svg" width="102" height="83" alt="Седона">
+        <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона">
       </a>
       <nav class="main-nav">
         <button class="main-nav__button" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__list site-list">
           <ul class="main-nav__wrapper site-list__wrapper">
-            <li class="site-list__item"><a class="site-list__item__link" href="index.html">Главная</a></li>
-            <li class="site-list__item"><a class="site-list__item__link" href="photo.html">Фото и видео</a></li>
+            <li class="site-list__item"><a class="site-list__item-link" href="index.html">Главная</a></li>
+            <li class="site-list__item"><a class="site-list__item-link" href="photo.html">Фото и видео</a></li>
             <li class="site-list__item site-list__item--current"><span>Форма отзыва</span></li>
-            <li class="site-list__item"><a class="site-list__item__link" href="https://htmlacademy.ru/intensive/adaptive">HTML academy</a></li>
+            <li class="site-list__item"><a class="site-list__item-link" href="https://htmlacademy.ru/intensive/adaptive">HTML academy</a></li>
           </ul>
           <button class="site-list__button" type="button"><span class="visually-hidden">Закрыть меню</span></button>
         </div>
@@ -31,23 +32,23 @@
         <p class="feedback__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         <form class="feedback__form feedback-form" name="feedback-form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="feedback-form__item name-form">
-            <legend class="feedback-form__item__title">Представьтесь:</legend>
+            <legend class="feedback-form__item-title">Представьтесь:</legend>
             <label class="name-form__text" for="name-of-a-person">Имя*:</label>
-            <input class="name-form__input name-form__input--wider-line" type="text" name="name" id="name-of-a-person">
+            <input class="name-form__input name-form__input--wider-line" type="text" name="name" id="name-of-a-person" placeholder="Петр">
             <label class="name-form__text" for="surname-of-a-person">Фамилия*:</label>
-            <input class="name-form__input" type="text" name="surname" id="surname-of-a-person">
+            <input class="name-form__input" type="text" name="surname" id="surname-of-a-person" placeholder="Иванов">
             <label class="name-form__text" for="patronymic-of-a-person">Отчество:</label>
-            <input class="name-form__input" type="text" name="patronymic" id="patronymic-of-a-person">
+            <input class="name-form__input" type="text" name="patronymic" id="patronymic-of-a-person" placeholder="Александрович">
           </fieldset>
           <fieldset class="feedback-form__item contacts-form">
-            <legend class="feedback-form__item__title">Контактная информация:</legend>
+            <legend class="feedback-form__item-title">Контактная информация:</legend>
             <label class="contacts-form__text" for="contacts-form-phone">Контактный телефон*:</label>
             <input class="contacts-form__input contacts-form__input--phone" type="text" name="contacts-form-phone" id="contacts-form-phone" placeholder="Введите телефон">
             <label class="contacts-form__text" for="contacts-form-email">Электронная почта*:</label>
             <input class="contacts-form__input contacts-form__input--email" type="text" name="contacts-form-email" id="contacts-form-email" placeholder="Введите e-mail">
           </fieldset>
           <fieldset class="feedback-form__item impression-form">
-            <legend class="feedback-form__item__title">Ваше общее впечатление:</legend>
+            <legend class="feedback-form__item-title">Ваше общее впечатление:</legend>
             <input class="impression-form__input visually-hidden" type="radio" name="positive-impression" id="positive-impression" value="positive" checked>
             <label class="impression-form__text" for="positive-impression">Скорее положительное</label>
             <input class="impression-form__input visually-hidden" type="radio" name="negative-impression" id="negative-impression" value="negative">
@@ -56,7 +57,7 @@
             <label class="impression-form__text" for="neutral-impression">Затрудняюсь ответить</label>
           </fieldset>
           <fieldset class="feedback-form__item attraction-form">
-            <legend class="feedback-form__item__title">Посещенные достопримечательности:</legend>
+            <legend class="feedback-form__item-title">Посещенные достопримечательности:</legend>
             <input class="attraction-form__input visually-hidden" type="checkbox" name="devil-bridge" id="devil-bridge" value="devil-bridge" checked>
             <label class="attraction-form__text" for="devil-bridge">Мост дьявола</label>
             <input class="attraction-form__input visually-hidden" type="checkbox" name="mount-bell" id="mount-bell" value="mount-bell" checked>
@@ -67,7 +68,7 @@
             <label class="attraction-form__text" for="red-rock">Красные скалы</label>
           </fieldset>
           <fieldset class="feedback-form__item emotion-form">
-            <legend class="feedback-form__item__title">Опишите свои эмоции:</legend>
+            <legend class="feedback-form__item-title">Опишите свои эмоции:</legend>
             <textarea class="emotion-form__input" name="emotion-form-input" rows="5" placeholder="Опишите подробно все свои восторги" aria-label="Поле ввода текста обратной связи"></textarea>
           </fieldset>
           <button class="feedback-form__button button" type="submit" value="Отправить отзыв">Отправить отзыв</button>
