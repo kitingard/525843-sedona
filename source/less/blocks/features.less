@@ -1,0 +1,30 @@
+.features__title {
+  display: block;
+  padding: 41px 21px 0;
+  .title();
+  color: #000000;
+  text-align: center;
+}
+
+.features__subtitle {
+  position: relative;
+  display: block;
+  padding: 0 21px 0;
+  font-size: 14px;
+  line-height: 26px;
+  color: #333333;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.features__subtitle::before {
+  content: "";
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  width: 320px;
+  height: 37px;
+  background-image: url("../img/bg-triangle.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}

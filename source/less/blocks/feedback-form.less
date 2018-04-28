@@ -1,0 +1,29 @@
+.feedback-form__item {
+  padding: 23px 20px 23px;
+  border: none;
+}
+
+.feedback-form__item-title {
+  position: relative;
+  display: block;
+  padding: 23px 0 21px;
+  margin: 0;
+  .title();
+  color: #000000;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 1px;
+    background-color: #f6f6f6;
+  }
+}
+
+.feedback-form__button {
+  margin-left: 20px;
+  border: none;
+  box-shadow: none;
+}

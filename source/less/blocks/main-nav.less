@@ -1,0 +1,28 @@
+.main-nav {
+  background-color: #81b3d2;
+}
+
+.main-nav__button {
+  position: absolute;
+  display: block;
+  width: 23px;
+  height: 21px;
+  background-color: #ffffff;
+  border: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 23px;
+    height: 21px;
+    background-image: url("../img/icon-menu.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+
+.main-nav__list {
+  display: block;
+}
