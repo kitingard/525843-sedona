@@ -9,8 +9,54 @@
 }
 
 .contacts-form__input {
-  padding-left: 58px;
+  padding-right: 58px;
   width: 222px;
   height: 58px;
   background-color: #f2f2f2;
+}
+
+@media (min-width: 768px) {
+  .contacts-form {
+    order: 2;
+    min-width: 648px;
+  }
+
+  .contacts-form__text {
+    padding: 14px 20px;
+    text-align: left;
+  }
+
+  .contacts-form__input {
+    width: 590px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contacts-form__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contacts-form__wrapper-item {
+    display: flex;
+    align-items: center;
+    min-width: 400px;
+  }
+
+  .contacts-form {
+    min-width: 960px;
+  }
+
+  .contacts-form__text {
+    padding: 0;
+    padding-right: 13px;
+
+    &--invisible {
+      display: none;
+    }
+  }
+
+  .contacts-form__input {
+    width: 257px;
+  }
 }

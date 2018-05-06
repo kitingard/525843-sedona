@@ -1,5 +1,5 @@
 .benefits-list {
-  width: 280px;
+  min-width: 280px;
   margin: 0;
   padding: 0 20px;
   background-color: #eeeeee;
@@ -23,4 +23,12 @@
 .benefits-list__item-text {
   display: block;
   .text();
+}
+
+@media (min-width: 768px) {
+  .benefits-list {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+  }
 }

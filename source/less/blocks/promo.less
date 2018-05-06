@@ -17,7 +17,39 @@
 .promo__item-text {
   display: block;
   margin: 0;
-  padding: o;
+  padding: 0;
   .text();
   color: #333333;
+}
+
+@media (min-width: 768px) {
+  .promo__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .promo__item {
+    padding: 57px 49px 60px;
+
+    &:nth-of-type(2) {
+      order: 2;
+    }
+
+    &:last-of-type {
+      order: 1;
+    }
+  }
+
+  .promo__item-title {
+    display: block;
+    padding: 100px 41px 22px 43px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .promo__item {
+    min-width: 260px;
+    min-height: 190px;
+    padding: 60px 70px 80px;
+  }
 }

@@ -1,14 +1,20 @@
 .main-nav {
+  position: absolute;
+  top: -195px;
+  left: 0;
+  min-width: 320px;
   background-color: #81b3d2;
 }
 
 .main-nav__button {
   position: absolute;
-  display: block;
+  bottom: -38px;
+  right: 20px;
   width: 23px;
   height: 21px;
   background-color: #ffffff;
   border: none;
+  z-index: 2;
 
   &::before {
     content: "";
@@ -25,4 +31,15 @@
 
 .main-nav__list {
   display: block;
+}
+
+@media (min-width: 768px) {
+  .main-nav {
+    position: static;
+    margin-bottom: 8px;
+  }
+
+  .main-nav__button {
+    display: none;
+  }
 }
