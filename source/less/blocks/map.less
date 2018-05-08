@@ -1,3 +1,31 @@
 .map {
-  width: 100%;
+  position: relative;
+  width: 320px;
+  height: 350px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 161px;
+    left: 146px;
+    width: 17px;
+    height: 17px;
+    background-color: #81b4d4;
+    border: 5px solid #ffffff;
+    border-radius: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .map {
+    width: 320px;
+    height: 350px;
+  }
+}
+
+@media (min-width: 768px) {
+  .map {
+    width: 320px;
+    height: 350px;
+  }
 }

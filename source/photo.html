@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона - фото и видео</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -89,12 +88,12 @@
         <h2 class="video__title">Всё ещё сомневаетесь?</h2>
         <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         <video class="video__file" src="" poster="img/video-mobile@1x.jpg" preload="metadata" width="320" height="200"></video>
-        <div class="video__nav video__nav--slider">
-          <div class="video__toggle">
-          </div>
-        </div>
-        <div class="video__nav video__nav--controls">
-        </div>
+        <ul class="video__nav">
+          <li class="video__nav-slider"></li>
+          <li class="video__nav-repeat"></li>
+          <li class="video__nav-sub"></li>
+          <li class="video__nav-fullscreen"></li>
+        </ul>
       </section>
     </main>
     <footer class="footer">

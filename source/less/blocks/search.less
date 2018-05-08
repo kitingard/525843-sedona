@@ -2,11 +2,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 32px 20px 49px;
+  padding: 12px 20px 47px;
 }
 
 .search__wrapper {
-  padding: 0 0 40px;
+  padding: 0 0 35px;
 }
 
 .search__title {
@@ -19,6 +19,8 @@
 }
 
 .search__subtitle {
+  display: block;
+  margin-bottom: 0;
   font-size: 14px;
   line-height: 24px;
   color: #333333;
@@ -26,9 +28,14 @@
   text-align: center;
 }
 
+.search__button {
+  display: block;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
 @media (min-width: 768px) {
   .search__button {
-    display: block;
     padding-left: 134px;
     padding-right: 133px;
   }
