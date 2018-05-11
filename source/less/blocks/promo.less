@@ -4,7 +4,7 @@
 
 .promo__list {
   margin: 0;
-  padding: 26px 18px 11px;
+  padding: 26px 18px 10px;
   list-style: none;
 }
 
@@ -41,10 +41,11 @@
   .promo__list {
     display: flex;
     justify-content: space-between;
+    padding: 0;
   }
 
   .promo__item {
-    padding: 57px 49px 60px;
+    padding: 57px 43px 59px 32px;
 
     &:nth-of-type(2) {
       order: 2;
@@ -57,7 +58,24 @@
 
   .promo__item-title {
     display: block;
-    padding: 100px 41px 22px 43px;
+    padding: 103px 0 22px;
+    font-size: 21px;
+    text-align: center;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 4px;
+      left: 53px;
+      width: 74px;
+      height: 72px;
+      background-color: #b6d3e5;
+    }
+  }
+
+  .promo__item-text {
+    padding: 0;
+    text-align: center;
   }
 }
 

@@ -38,18 +38,26 @@
 }
 
 @media (min-width: 768px) {
+  .attraction-form {
+    margin: 15px 0 0;
+  }
+
   .attraction-form__wrapper {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 80px;
+    justify-content: space-between;
+    align-content: flex-start;
+    padding: 46px 105px 31px 95px;
   }
 
   .attraction-form__wrapper-item {
     min-width: 123px;
     margin-right: 63px;
+    margin-bottom: 7px;
 
     &:nth-of-type(2n) {
       margin-right: 0;
+      margin-left: auto;
     }
   }
 

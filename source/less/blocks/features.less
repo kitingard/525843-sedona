@@ -33,8 +33,17 @@
 }
 
 @media (min-width: 768px) {
-  .features__subtitle::before {
-    content: "";
-    display: none;
+  .features__title {
+    padding: 50px 75px 27px;
+    font-size: 21px;
+  }
+
+  .features__subtitle {
+    margin-bottom: 49px;
+
+    &::before {
+      content: "";
+      display: none;
+    }
   }
 }

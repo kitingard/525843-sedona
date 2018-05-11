@@ -102,22 +102,33 @@
   .video {
     position: relative;
     margin: 0;
-    padding: 0;
+    padding: 66px 60px 20px;
+  }
+
+  .video__title {
+    font-size: 30px;
+  }
+
+  .video__text {
+    padding: 31px 110px 27px;
   }
 
   .video__file {
     width: 648px;
     height: 500px;
-    margin: 0 auto;
   }
 
   .video__nav {
     position: absolute;
-    bottom: 50px;
+    bottom: 70px;
     left: 0;
     display: flex;
     justify-content: space-between;
-    width: 648px;
+    width: 575px;
+    min-height: 44px;
+    margin-left: 59px;
+    padding-left: 35px;
+    padding-right: 38px;
     background-color: rgba(0, 0, 0, 0.6);
   }
 
@@ -127,25 +138,33 @@
     width: 389px;
     padding: 0;
     background-color: rgba(255, 255, 255, 0.2);
+    order: 1;
 
     &::before {
       display: none;
     }
 
     &::after {
-      margin-top: 9px;
+      margin-top: 20px;
+      margin-left: 145px;
     }
   }
 
   .video__nav-repeat {
     position: static;
+    order: 0;
+    align-self: center;
   }
 
   .video__nav-sub {
     position: static;
+    order: 2;
+    align-self: center;
   }
 
   .video__nav-fullscreen {
     position: static;
+    order: 3;
+    align-self: center;
   }
 }

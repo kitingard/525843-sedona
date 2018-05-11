@@ -39,10 +39,31 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0 60px;
+    padding: 0 60px 26px;
+  }
+
+  .feedback-form__item {
+    padding: 0;
   }
 
   .feedback-form__item-title {
+    font-size: 21px;
+
+    &--left {
+      text-align: left;
+      margin-left: 15px;
+    }
+
+    &--center {
+      padding: 20px 59px 0;
+      text-align: center;
+    }
+
+    &--narrow {
+      padding: 23px 150px 0;
+      text-align: center;
+    }
+
     &::before {
       content: "";
       display: none;
@@ -52,6 +73,7 @@
   .feedback-form__button {
     order: 5;
     min-width: 324px;
+    margin-left: 0;
   }
 
   .feedback-form__compulsory-input {

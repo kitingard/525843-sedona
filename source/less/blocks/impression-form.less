@@ -37,5 +37,36 @@
   .impression-form {
     order: 0;
     min-width: 280px;
+    padding-top: 24px;
+    margin-left: -4px;
+  }
+
+  .impression-form__text {
+    padding: 25px 0 0 68px;
+
+    &:first-of-type {
+      padding-top: 49px;
+
+      &::before {
+        top: 35px;
+        left: 3px;
+      }
+    }
+
+    &::before {
+      top: 11px;
+      left: 3px;
+    }
+  }
+
+  .impression-form__input:checked + .impression-form__text:first-of-type::after {
+    top: 52px;
+    left: 20px;
+  }
+
+  .impression-form__input:checked + .impression-form__text::after {
+    top: 28px;
+    left: 20px;
   }
 }
+
