@@ -58,22 +58,26 @@
     display: flex;
     justify-content: space-around;
     background-color: #ffffff;
+    padding: 0;
   }
 
   .site-list__item {
-    margin-left: 35px;
-    padding: 22px 0 15px;
+    min-width: 102px;
+    padding: 22px 28px 15px;
     font-size: 14px;
     line-height: 26px;
     color: #000000;
     border: none;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
 
     &--logo {
       position: relative;
       display: block;
       width: 102px;
       margin-top: 8px;
-      margin-left: 42px;
 
       &::before {
         content: "";
@@ -101,6 +105,14 @@
 }
 
 @media (min-width: 1200px) {
+  .site-list__wrapper {
+    padding: 0 27px 0 15px;
+  }
+
+  .site-list__item {
+    padding-bottom: 16px;
+  }
+
   .site-list__item--logo {
     width: 198px;
 

@@ -39,6 +39,7 @@
 
 @media (min-width: 768px) {
   .attraction-form {
+    order: 3;
     margin: 15px 0 0;
   }
 
@@ -60,22 +61,17 @@
       margin-left: auto;
     }
   }
-
-  .attraction-form {
-    order: 3;
-  }
 }
 
 @media (min-width: 1200px) {
   .attraction-form__wrapper {
-    padding: 0;
+    padding: 45px 0 28px;
   }
 
   .attraction-form__wrapper-item {
-    margin-right: 65px;
-
-    &:last-of-type {
-      margin-right: 0;
+    &:nth-of-type(2) {
+      margin-left: 10px;
+      margin-right: 73px;
     }
   }
 }

@@ -101,29 +101,61 @@
 @media (min-width: 1200px) {
   .contacts-form {
     min-width: 960px;
+    margin-top: 34px;
   }
 
   .contacts-form__wrapper {
     display: flex;
     justify-content: space-between;
+    padding: 73px 0 20px;
   }
 
   .contacts-form__wrapper-item {
+    position: relative;
     display: flex;
     align-items: center;
     min-width: 400px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 58px;
+      height: 58px;
+      background-color: #e6e6e6;
+    }
   }
 
   .contacts-form__text {
     padding: 0;
     padding-right: 13px;
+    padding-bottom: 7px;
 
     &--invisible {
       display: none;
     }
+
+    &::before {
+      display: none;
+    }
+
+    &--phone {
+      &::after {
+        top: 2px;
+        left: 362px;
+      }
+    }
+
+    &--email {
+      &::after {
+        top: 5px;
+        left: 436px;
+      }
+    }
   }
 
   .contacts-form__input {
-    width: 257px;
+    width: 236px;
   }
 }

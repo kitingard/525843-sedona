@@ -49,19 +49,12 @@
   .feedback-form__item-title {
     font-size: 21px;
 
-    &--left {
-      text-align: left;
-      margin-left: 15px;
-    }
-
     &--center {
       padding: 20px 59px 0;
-      text-align: center;
     }
 
     &--narrow {
       padding: 23px 150px 0;
-      text-align: center;
     }
 
     &::before {
@@ -89,7 +82,17 @@
 
 @media (min-width: 1200px) {
   .feedback-form {
-    padding: 0 120px;
+    padding: 0 120px 31px;
+  }
+
+  .feedback-form__item-title {
+    &--narrow {
+      padding: 5px 340px 0;
+    }
+
+    &--center {
+      padding: 20px 59px 0 34px;
+    }
   }
 
   .feedback-form__button {

@@ -42,6 +42,11 @@
     border-left: 1px solid #f3f3f3;
   }
 
+  .name-form__title {
+    padding-left: 15px;
+    text-align: left;
+  }
+
   .name-form__wrapper {
     margin-top: 34px;
   }
@@ -59,7 +64,25 @@
     width: 157px;
 
     &--wider-line {
-     width: 195px;
-   }
+      width: 195px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .name-form {
+    padding: 23px 0 0 75px;
+  }
+
+  .name-form__title {
+    padding-left: 3px;
+  }
+
+  .name-form__input {
+    width: 291px;
+
+    &--wider-line {
+      width: 329px;
+    }
   }
 }

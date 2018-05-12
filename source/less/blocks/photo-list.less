@@ -111,10 +111,41 @@
 
 @media (min-width: 1200px) {
   .photo-list__item {
+    position: relative;
     min-width: 400px;
+  }
+
+  .photo-list__img {
+    width: 400px;
+    margin-top: -5px;
 
     &--main {
-      min-width: 1200px;
+      width: 1200px;
+      margin-top: 0;
     }
+  }
+
+  .photo-list__wrapper {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 381px;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    &--main {
+      width: 1181px;
+    }
+  }
+
+  .photo-list__item-title {
+    color: #ffffff;
+  }
+
+  .photo-list__item-text {
+    color: #ffffff;
+  }
+
+  .photo-list__item-number {
+    color: #ffffff;
   }
 }
