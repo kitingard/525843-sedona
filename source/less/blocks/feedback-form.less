@@ -1,29 +1,24 @@
 .feedback-form__item {
-  padding: 23px 20px 23px;
+  padding: 23px 0 12px;
   border: none;
 }
 
 .feedback-form__item-title {
   position: relative;
   display: block;
-  padding: 23px 0 21px;
+  width: 100%;
+  padding: 18px 0 0;
   margin: 0;
   .title();
   color: #000000;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 320px;
-    height: 1px;
-    background-color: #f6f6f6;
-  }
+  border-top: 1px solid #f6f6f6;
 }
 
 .feedback-form__button {
-  margin-left: 20px;
+  margin-left: 19px;
+  padding-left: 36px;
+  padding-right: 36px;
+  padding-bottom: 16px;
   border: none;
   box-shadow: none;
 }
@@ -37,10 +32,26 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0 60px;
+    padding: 0 60px 26px;
+  }
+
+  .feedback-form__item {
+    padding: 0;
   }
 
   .feedback-form__item-title {
+    font-size: 21px;
+    border-top: none;
+
+    &--center {
+      padding: 20px 59px 0;
+    }
+
+    &--narrow {
+      width: 270px;
+      padding: 23px 0 0;
+    }
+
     &::before {
       content: "";
       display: none;
@@ -50,12 +61,14 @@
   .feedback-form__button {
     order: 5;
     min-width: 324px;
+    margin-left: 0;
   }
 
   .feedback-form__compulsory-input {
     align-self: center;
     order: 6;
     display: block;
+    padding-top: 3px;
     font-size: 14px;
     line-height: 24px;
     color: #6c6c6c;
@@ -65,7 +78,17 @@
 
 @media (min-width: 1200px) {
   .feedback-form {
-    padding: 0 120px;
+    padding: 0 120px 31px;
+  }
+
+  .feedback-form__item-title {
+    &--narrow {
+      padding: 5px 340px 0;
+    }
+
+    &--center {
+      padding: 20px 59px 0 34px;
+    }
   }
 
   .feedback-form__button {

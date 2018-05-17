@@ -6,7 +6,7 @@
 
 .photo-list__item {
   display: block;
-  padding: 22px 20px 20px;
+  padding: 22px 20px 17px;
   border-top: 1px solid #f6f6f6;
 
   &:last-of-type {
@@ -14,10 +14,15 @@
   }
 }
 
+.photo-list__img {
+  width: 280px;
+  height: 280px;
+}
+
 .photo-list__item-title {
   display: block;
   margin: 0;
-  padding: 20px 0 10px;
+  padding: 11px 0 0;
   font-size: 14px;
   line-height: 24px;
   color: #000000;
@@ -35,14 +40,25 @@
 }
 
 .photo-list__item-number {
+  position: relative;
   display: block;
   margin: 0;
-  padding: 15px 36px 0;
+  padding: 8px 36px 0;
   font-size: 14px;
   line-height: 24px;
   color: #000000;
   font-weight: bold;
   text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 22px;
+    height: 21px;
+    background-color: #b2b2b2;
+  }
 }
 
 @media (min-width: 768px) {
@@ -53,11 +69,15 @@
 
   .photo-list__item {
     padding: 0;
-    min-width: 324px;
+  }
+
+  .photo-list__img {
+    width: 324px;
+    height: 267px;
 
     &--main {
-      min-width: 648px;
-      min-height: 400px;
+      width: 648px;
+      height: 400px;
     }
   }
 
@@ -65,17 +85,67 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 18px 0 19px 19px;
+    margin-top: -5px;
+    padding: 6px 0 15px 19px;
     background-color: #f2f2f2;
+  }
+
+  .photo-list__item-number {
+    padding: 12px 30px 0 36px;
+
+    &::before {
+      top: 11px;
+      left: 4px;
+    }
+
+    &--main {
+      padding: 12px 22px 0 36px;
+
+      &::before {
+        top: 11px;
+        left: 5px;
+      }
+    }
   }
 }
 
 @media (min-width: 1200px) {
   .photo-list__item {
+    position: relative;
     min-width: 400px;
+  }
+
+  .photo-list__img {
+    width: 400px;
+    margin-top: -5px;
 
     &--main {
-      min-width: 1200px;
+      width: 1200px;
+      margin-top: 0;
     }
+  }
+
+  .photo-list__wrapper {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 381px;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    &--main {
+      width: 1181px;
+    }
+  }
+
+  .photo-list__item-title {
+    color: #ffffff;
+  }
+
+  .photo-list__item-text {
+    color: #ffffff;
+  }
+
+  .photo-list__item-number {
+    color: #ffffff;
   }
 }

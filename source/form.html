@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона - форма отзыва</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -36,7 +35,7 @@
         <p class="feedback__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         <form class="feedback__form feedback-form" name="feedback-form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="feedback-form__item name-form">
-            <legend class="feedback-form__item-title">Представьтесь:</legend>
+            <legend class="feedback-form__item-title name-form__title">Представьтесь:</legend>
             <div class="name-form__wrapper">
               <div class="name-form__wrapper-item">
                 <label class="name-form__text" for="name-of-a-person">Имя*:</label>
@@ -53,33 +52,35 @@
             </div>
           </fieldset>
           <fieldset class="feedback-form__item contacts-form">
-            <legend class="feedback-form__item-title">Контактная информация:</legend>
+            <legend class="feedback-form__item-title feedback-form__item-title--center">Контактная информация:</legend>
             <div class="contacts-form__wrapper">
               <div class="contacts-form__wrapper-item">
-                <label class="contacts-form__text" for="contacts-form-phone"><span class="contacts-form__text--invisible">Контактный </span>телефон*:</label>
+                <label class="contacts-form__text contacts-form__text--phone" for="contacts-form-phone"><span class="contacts-form__text--invisible">Контактный </span>телефон*:</label>
                 <input class="contacts-form__input contacts-form__input--phone" type="text" name="contacts-form-phone" id="contacts-form-phone" placeholder="Введите телефон">
               </div>
               <div class="contacts-form__wrapper-item">
-                <label class="contacts-form__text" for="contacts-form-email">Электронная почта*:</label>
+                <label class="contacts-form__text contacts-form__text--email" for="contacts-form-email">Электронная почта*:</label>
                 <input class="contacts-form__input contacts-form__input--email" type="text" name="contacts-form-email" id="contacts-form-email" placeholder="Введите e-mail">
               </div>
             </div>
           </fieldset>
           <fieldset class="feedback-form__item impression-form">
-            <legend class="feedback-form__item-title">Ваше общее впечатление:</legend>
-            <input class="impression-form__input visually-hidden" type="radio" name="positive-impression" id="positive-impression" value="positive" checked>
-            <label class="impression-form__text" for="positive-impression">Скорее положительное</label>
-            <input class="impression-form__input visually-hidden" type="radio" name="negative-impression" id="negative-impression" value="negative">
-            <label class="impression-form__text" for="negative-impression">Скорее отрицательное</label>
-            <input class="impression-form__input visually-hidden" type="radio" name="neutral-impression" id="neutral-impression" value="neutral">
-            <label class="impression-form__text" for="neutral-impression">Затрудняюсь ответить</label>
+            <legend class="feedback-form__item-title impression-form__title">Ваше общее впечатление:</legend>
+            <div class="impression-form__wrapper">
+              <input class="impression-form__input visually-hidden" type="radio" name="impression" id="positive-impression" value="positive" checked>
+              <label class="impression-form__text" for="positive-impression">Скорее положительное</label>
+              <input class="impression-form__input visually-hidden" type="radio" name="impression" id="negative-impression" value="negative">
+              <label class="impression-form__text" for="negative-impression">Скорее отрицательное</label>
+              <input class="impression-form__input visually-hidden" type="radio" name="impression" id="neutral-impression" value="neutral">
+              <label class="impression-form__text" for="neutral-impression">Затрудняюсь ответить</label>
+            </div>
           </fieldset>
           <fieldset class="feedback-form__item attraction-form">
-            <legend class="feedback-form__item-title">Посещенные достопримечательности:</legend>
+            <legend class="feedback-form__item-title feedback-form__item-title--narrow">Посещенные достопримечательности:</legend>
             <div class="attraction-form__wrapper">
               <div class="attraction-form__wrapper-item">
                 <input class="attraction-form__input visually-hidden" type="checkbox" name="devil-bridge" id="devil-bridge" value="devil-bridge" checked>
-                <label class="attraction-form__text" for="devil-bridge">Мост дьявола</label>
+                <label class="attraction-form__text" for="devil-bridge">Мост Дьявола</label>
               </div>
               <div class="attraction-form__wrapper-item">
                 <input class="attraction-form__input visually-hidden" type="checkbox" name="mount-bell" id="mount-bell" value="mount-bell" checked>
@@ -96,11 +97,11 @@
             </div>
           </fieldset>
           <fieldset class="feedback-form__item emotion-form">
-            <legend class="feedback-form__item-title">Опишите свои эмоции:</legend>
+            <legend class="feedback-form__item-title feedback-form__item-title--center">Опишите свои эмоции:</legend>
             <textarea class="emotion-form__input" name="emotion-form-input" rows="5" placeholder="Опишите подробно все свои восторги" aria-label="Поле ввода текста обратной связи"></textarea>
           </fieldset>
           <button class="feedback-form__button button" type="submit" value="Отправить отзыв">Отправить отзыв</button>
-          <span class="feedback-form__compulsory-input">*обязательные поля</span>
+          <span class="feedback-form__compulsory-input">* – обязательные поля</span>
         </form>
       </section>
       <div class="modal-form modal-form--fail">

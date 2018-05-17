@@ -1,5 +1,5 @@
 .feedback {
-  padding: 20px 0 47px;
+  padding: 38px 0 37px;
 }
 
 .feedback__title {
@@ -12,11 +12,35 @@
 
 .feedback__text {
   display: block;
-  padding: 37px 20px 22px;
+  padding: 27px 20px 16px;
   margin: 0;
   font-size: 14px;
   line-height: 24px;
   color: #333333;
   text-align: center;
   text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .feedback {
+    padding: 75px 0 37px;
+  }
+
+  .feedback__title {
+    font-size: 30px;
+  }
+
+  .feedback__text {
+    padding: 31px 165px 55px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .feedback__title {
+    padding-top: 36px;
+  }
+
+  .feedback__text {
+    padding: 31px 365px 40px;
+  }
 }

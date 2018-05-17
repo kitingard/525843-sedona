@@ -1,6 +1,6 @@
 .page-main__logo-wrapper {
   position: relative;
-  width: auto;
+  width: 320px;
   background-color: #7aa5c7;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -37,6 +37,7 @@
     background-image: url("../img/text-sedona-index.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
+    background-size: 100%;
   }
 
   &--inner {
@@ -55,13 +56,19 @@
     background-image: url("../img/text-sedona.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
+    background-size: 100%;
   }
 }
 
 @media (min-width: 768px) {
   .page-main__logo-wrapper {
+    width: 768px;
+    margin: 0;
+    padding: 0;
+    background-size: 148% 100%;
+
     &--index {
-      min-height: 518px;
+      min-height: 519px;
     }
 
     &--inner {
@@ -70,10 +77,10 @@
   }
 
   .page-main__logo {
-    margin: 0 auto;
+    margin: 0 152px;
 
     &--index {
-      width: 545px;
+      min-width: 545px;
     }
 
     &--index::before {
@@ -81,23 +88,63 @@
       position: absolute;
       top: 77px;
       left: 0;
-      width: 351px;
+      width: 464px;
       height: 460px;
       background-image: url("../img/text-sedona-index.svg");
       background-repeat: no-repeat;
       background-position: 0 0;
+      background-size: 100%;
     }
 
     &--inner {
       width: 465px;
+    }
+
+    &--inner::before {
+      top: 94px;
+      left: 4px;
+      width: 458px;
+      height: 79px;
+      background-size: 100%;
+    }
+
+    &::after {
+      bottom: -133px;
+      left: 70px;
     }
   }
 }
 
 @media (min-width: 1200px) {
   .page-main__logo-wrapper {
+    width: 1200px;
+
+    &--inner {
+      min-height: 301px;
+    }
+  }
+
+  .page-main__logo {
+    margin: 0 360px;
+
     &--index {
       width: 800px;
+    }
+
+    &--inner {
+      width: 463px;
+    }
+
+    &--inner::before {
+      top: 101px;
+      left: 4px;
+      width: 465px;
+      height: 79px;
+      background-size: 100%;
+    }
+
+    &::after {
+      bottom: -143px;
     }
   }
 }

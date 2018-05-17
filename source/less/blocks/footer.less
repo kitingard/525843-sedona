@@ -5,7 +5,8 @@
 
 .footer__title {
   display: block;
-  padding: 6px 7px 40px;
+  margin: 0;
+  padding: 2px 7px 36px;
   font-size: 21px;
   line-height: 26px;
   color: #000000;
@@ -17,6 +18,19 @@
 @media (min-width: 768px) {
   .footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 648px;
+    padding: 34px 60px;
+  }
+
+  .footer__title {
+    padding: 10px 0 14px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    width: 960px;
+    padding: 34px 120px;
   }
 }

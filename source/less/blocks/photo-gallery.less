@@ -1,13 +1,13 @@
 .photo-gallery__title {
   display: block;
-  padding: 42px 25px 16px;
+  padding: 24px 25px 10px;
   .title();
   color: #000000;
 }
 
 .photo-gallery__text {
   display: block;
-  padding: 16px 25px 32px;
+  padding: 0 25px 13px;
   font-size: 14px;
   line-height: 24px;
   color: #333333;
@@ -19,10 +19,29 @@
   .photo-gallery {
     padding: 0 60px;
   }
+
+  .photo-gallery__title {
+    padding-top: 50px;
+    padding-bottom: 7px;
+    font-size: 30px;
+  }
+
+  .photo-gallery__text {
+    padding: 0 110px 53px;
+  }
 }
 
 @media (min-width: 1200px) {
   .photo-gallery {
     padding: 0;
+  }
+
+  .photo-gallery__title {
+    padding-top: 86px;
+    padding-bottom: 6px;
+  }
+
+  .photo-gallery__text {
+    padding: 0 380px 56px;
   }
 }

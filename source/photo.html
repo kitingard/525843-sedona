@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона - фото и видео</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -35,20 +34,20 @@
         <h2 class="photo-gallery__title">Фото и видео</h2>
         <p class="photo-gallery__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
         <ul class="photo-gallery__list photo-list">
-          <li class="photo-list__item photo-list__item--main">
-            <img src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Неродные просторы">
-            <div class="photo-list__wrapper">
+          <li class="photo-list__item">
+            <img class="photo-list__img--main" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Неродные просторы">
+            <div class="photo-list__wrapper photo-list__wrapper--main">
               <div class="photo-list__wrapper-item">
                 <h3 class="photo-list__item-title">Неродные просторы</h3>
                 <p class="photo-list__item-text">Автор фото: Борис</p>
               </div>
               <div class="photo-list__wrapper-item">
-                <span class="photo-list__item-number">1350</span>
+                <span class="photo-list__item-number photo-list__item-number--main">1350</span>
               </div>
             </div>
           </li>
           <li class="photo-list__item">
-            <img src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Местная растительность">
+            <img class="photo-list__img" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Местная растительность">
             <div class="photo-list__wrapper">
               <div class="photo-list__wrapper-item">
                 <h3 class="photo-list__item-title">Местная растительность</h3>
@@ -60,7 +59,7 @@
             </div>
           </li>
           <li class="photo-list__item">
-            <img src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Дорога на север">
+            <img class="photo-list__img" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Дорога на север">
             <div class="photo-list__wrapper">
               <div class="photo-list__wrapper-item">
                 <h3 class="photo-list__item-title">Дорога на север</h3>
@@ -72,7 +71,7 @@
             </div>
           </li>
           <li class="photo-list__item">
-            <img src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Мост дьявола">
+            <img class="photo-list__img" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Мост дьявола">
             <div class="photo-list__wrapper">
               <div class="photo-list__wrapper-item">
                 <h3 class="photo-list__item-title">Мост дьявола</h3>
@@ -89,12 +88,12 @@
         <h2 class="video__title">Всё ещё сомневаетесь?</h2>
         <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         <video class="video__file" src="" poster="img/video-mobile@1x.jpg" preload="metadata" width="320" height="200"></video>
-        <div class="video__nav video__nav--slider">
-          <div class="video__toggle">
-          </div>
-        </div>
-        <div class="video__nav video__nav--controls">
-        </div>
+        <ul class="video__nav">
+          <li class="video__nav-slider"></li>
+          <li class="video__nav-repeat"></li>
+          <li class="video__nav-sub"></li>
+          <li class="video__nav-fullscreen"></li>
+        </ul>
       </section>
     </main>
     <footer class="footer">
