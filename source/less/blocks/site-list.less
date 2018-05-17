@@ -63,14 +63,18 @@
 
   .site-list__item {
     min-width: 102px;
-    padding: 22px 28px 15px;
+    padding: 21px 28px 16px;
     font-size: 14px;
     line-height: 26px;
     color: #000000;
     border: none;
 
+    &:first-of-type {
+      margin-left: -8px;
+    }
+
     &:last-of-type {
-      margin-right: 0;
+      margin-right: -8px;
     }
 
     &--logo {
@@ -110,7 +114,12 @@
   }
 
   .site-list__item {
+    padding-top: 22px;
     padding-bottom: 16px;
+
+    &:last-of-type {
+      margin-right: -20px;
+    }
   }
 
   .site-list__item--logo {

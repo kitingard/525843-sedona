@@ -1,31 +1,24 @@
 .feedback-form__item {
-  padding: 23px 20px 12px;
+  padding: 23px 0 12px;
   border: none;
 }
 
 .feedback-form__item-title {
   position: relative;
   display: block;
-  padding: 19px 0 0;
+  width: 100%;
+  padding: 18px 0 0;
   margin: 0;
   .title();
   color: #000000;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -40px;
-    width: 320px;
-    height: 1px;
-    background-color: #f6f6f6;
-  }
+  border-top: 1px solid #f6f6f6;
 }
 
 .feedback-form__button {
-  margin-left: 20px;
+  margin-left: 19px;
   padding-left: 36px;
   padding-right: 36px;
+  padding-bottom: 16px;
   border: none;
   box-shadow: none;
 }
@@ -48,13 +41,15 @@
 
   .feedback-form__item-title {
     font-size: 21px;
+    border-top: none;
 
     &--center {
       padding: 20px 59px 0;
     }
 
     &--narrow {
-      padding: 23px 150px 0;
+      width: 270px;
+      padding: 23px 0 0;
     }
 
     &::before {
@@ -73,6 +68,7 @@
     align-self: center;
     order: 6;
     display: block;
+    padding-top: 3px;
     font-size: 14px;
     line-height: 24px;
     color: #6c6c6c;

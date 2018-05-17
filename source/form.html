@@ -66,12 +66,14 @@
           </fieldset>
           <fieldset class="feedback-form__item impression-form">
             <legend class="feedback-form__item-title impression-form__title">Ваше общее впечатление:</legend>
-            <input class="impression-form__input visually-hidden" type="radio" name="positive-impression" id="positive-impression" value="positive" checked>
-            <label class="impression-form__text" for="positive-impression">Скорее положительное</label>
-            <input class="impression-form__input visually-hidden" type="radio" name="negative-impression" id="negative-impression" value="negative">
-            <label class="impression-form__text" for="negative-impression">Скорее отрицательное</label>
-            <input class="impression-form__input visually-hidden" type="radio" name="neutral-impression" id="neutral-impression" value="neutral">
-            <label class="impression-form__text" for="neutral-impression">Затрудняюсь ответить</label>
+            <div class="impression-form__wrapper">
+              <input class="impression-form__input visually-hidden" type="radio" name="impression" id="positive-impression" value="positive" checked>
+              <label class="impression-form__text" for="positive-impression">Скорее положительное</label>
+              <input class="impression-form__input visually-hidden" type="radio" name="impression" id="negative-impression" value="negative">
+              <label class="impression-form__text" for="negative-impression">Скорее отрицательное</label>
+              <input class="impression-form__input visually-hidden" type="radio" name="impression" id="neutral-impression" value="neutral">
+              <label class="impression-form__text" for="neutral-impression">Затрудняюсь ответить</label>
+            </div>
           </fieldset>
           <fieldset class="feedback-form__item attraction-form">
             <legend class="feedback-form__item-title feedback-form__item-title--narrow">Посещенные достопримечательности:</legend>
