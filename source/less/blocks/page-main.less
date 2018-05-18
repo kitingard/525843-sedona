@@ -4,7 +4,16 @@
   background-color: #7aa5c7;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: -200px 0;
+  background-position: -250px 0;
+  background-size: 250%;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
+
+  &--inner {
+    background-position: -240px -247px;
+  }
 }
 
 .page-main__logo {
@@ -65,7 +74,13 @@
     width: 768px;
     margin: 0;
     padding: 0;
-    background-size: 148% 100%;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: 0 0;
+    background-size: 100%;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
 
     &--index {
       min-height: 519px;
@@ -73,6 +88,7 @@
 
     &--inner {
       min-height: 290px;
+      background-position: 0 -230px;
     }
   }
 
@@ -118,9 +134,15 @@
 @media (min-width: 1200px) {
   .page-main__logo-wrapper {
     width: 1200px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
 
     &--inner {
       min-height: 301px;
+      background-position: 0 -217px;
     }
   }
 
