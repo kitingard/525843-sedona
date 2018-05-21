@@ -1,5 +1,5 @@
 .video {
-  padding: 33px 0 39px;
+  padding: 33px 0 40px;
 }
 
 .video__title {
@@ -86,7 +86,19 @@
   left: 25px;
   width: 16px;
   height: 20px;
-  background-color: #5c6870;
+
+  &--icon {
+    fill: #5c6870;
+  }
+
+  &--icon:hover,
+  &--icon:active {
+    fill: #333333;
+  }
+
+  &--icon:disabled {
+    fill: #b8b8b8;
+  }
 }
 
 .video__nav-sub {
@@ -95,7 +107,19 @@
   right: 74px;
   width: 32px;
   height: 20px;
-  background-color: #5c6870;
+
+  &--icon {
+    fill: #5c6870;
+  }
+
+  &--icon:hover,
+  &--icon:active {
+    fill: #333333;
+  }
+
+  &--icon:disabled {
+    fill: #b8b8b8;
+  }
 }
 
 .video__nav-fullscreen {
@@ -104,15 +128,28 @@
   right: 23px;
   width: 20px;
   height: 20px;
-  background-color: #5c6870;
+  
+  &--icon {
+    fill: #5c6870;
+  }
+
+  &--icon:hover,
+  &--icon:active {
+    fill: #333333;
+  }
+
+  &--icon:disabled {
+    fill: #b8b8b8;
+  }
 }
 
 @media (min-width: 768px) {
   .video {
     position: relative;
     margin: 0;
-    padding: 66px 60px 20px;
+    padding: 67px 60px 20px;
     margin-bottom: 18px;
+    margin-left: 2px;
   }
 
   .video__title {
@@ -152,6 +189,8 @@
     position: static;
     align-self: center;
     width: 389px;
+    margin-top: 1px;
+    margin-left: 2px;
     padding: 0;
     background-color: rgba(255, 255, 255, 0.2);
     order: 1;
@@ -161,7 +200,7 @@
     }
 
     &::after {
-      margin-top: 22px;
+      margin-top: 23px;
       margin-left: 147px;
     }
   }
@@ -170,28 +209,71 @@
     position: static;
     order: 0;
     align-self: center;
+
+    &--icon {
+      fill: #ffffff;
+    }
+
+    &--icon:hover,
+    &--icon:active {
+      fill: #c2c2c2;
+    }
+
+    &--icon:disabled {
+      fill: #949494;
+    }
   }
 
   .video__nav-sub {
     position: static;
     order: 2;
     align-self: center;
+
+    &--icon {
+      margin-left: 5px;
+      fill: #ffffff;
+    }
+
+    &--icon:hover,
+    &--icon:active {
+      fill: #c2c2c2;
+    }
+
+    &--icon:disabled {
+      fill: #949494;
+    }
   }
 
   .video__nav-fullscreen {
     position: static;
     order: 3;
     align-self: center;
+
+    &--icon {
+      margin-left: -3px;
+      fill: #ffffff;
+    }
+
+    &--icon:hover,
+    &--icon:active {
+      fill: #c2c2c2;
+    }
+
+    &--icon:disabled {
+      fill: #949494;
+    }
   }
 }
 
 @media (min-width: 1200px) {
   .video {
+    margin-top: -2px;
     margin-bottom: 63px;
+    margin-left: 0;
   }
 
   .video__text {
-    padding: 31px 330px 70px;
+    padding: 31px 330px 71px;
   }
 
   .video__file {

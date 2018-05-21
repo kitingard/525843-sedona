@@ -10,4 +10,20 @@
   text-decoration: none;
   background-color: #81b3d2;
   border: none;
+
+  &:hover,
+  &:focus {
+    background-color: #669ec0;
+    cursor: pointer;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #5496bd;
+    cursor: pointer;
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
 }

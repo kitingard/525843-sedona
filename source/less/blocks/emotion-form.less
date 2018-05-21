@@ -1,30 +1,61 @@
 .emotion-form__input {
-  width: 261px;
+  width: 247px;
   min-height: 143px;
   margin: -5px 0 36px 17px;
-  padding: 15px 0 0 17px;
+  padding: 15px 14px 0 17px;
   font-size: 18px;
   line-height: 26px;
   color: #000000;
   font-weight: bold;
   background-color: #f2f2f2;
   border: none;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    background-color: #e5e5e5;
+  }
+
+  &:active {
+    width: 243px;
+    height: 131px;
+    padding-top: 11px;
+    padding-left: 13px;
+    border: 4px solid #e5e5e5;
+    background-color: #ffffff;
+  }
 }
 
 @media (min-width: 768px) {
   .emotion-form {
     order: 4;
+    margin-top: 10px;
   }
 
   .emotion-form__input {
     min-width: 612px;
-    margin: 58px 0 53px;
+    margin: 47px 0 53px;
     padding: 18px 18px 0;
+
+    &:active {
+      width: 600px;
+      padding-top: 14px;
+      padding-left: 13px;
+    }
   }
 }
 
 @media (min-width: 1200px) {
+  .emotion-form {
+    margin-top: 0;
+  }
   .emotion-form__input {
     min-width: 924px;
+    margin-top: 38px;
+    margin-left: -1px;
+
+    &:active {
+      width: 916px;
+    }
   }
 }

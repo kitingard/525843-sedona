@@ -37,6 +37,19 @@
   border-radius: 50%;
 }
 
+.impression-form__input:hover + .impression-form__text::before,
+.impression-form__input:focus + .impression-form__text::before {
+  background-color: #e5e5e5;
+}
+
+.impression-form__input:active + .impression-form__text::before {
+  background-color: #d5d5d5;
+}
+
+.impression-form__input:checked:active + .impression-form__text::after {
+  background-color: #a4a4a4;
+}
+
 @media (min-width: 768px) {
   .impression-form {
     order: 0;
@@ -81,5 +94,9 @@
 @media (min-width: 1200px) {
   .impression-form__title {
     padding-left: 83px;
+  }
+
+  .impression-form__text {
+    margin-left: 5px;
   }
 }

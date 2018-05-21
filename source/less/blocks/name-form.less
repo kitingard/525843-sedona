@@ -36,9 +36,26 @@
   font-weight: bold;
   background-color: #f2f2f2;
   border: none;
+  outline: none;
 
   &--wider-line {
     width: 209px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #e5e5e5;
+  }
+
+  &:active {
+    width: 164px;
+    height: 48px;
+    border: 4px solid #e5e5e5;
+    background-color: #ffffff;
+  }
+
+  &--wider-line:active {
+    width: 201px;
   }
 }
 
@@ -48,7 +65,7 @@
     min-width: 280px;
     margin-bottom: 0;
     padding: 23px 0 0 42px;
-    border-left: 1px solid #f3f3f3;
+    border-left: 1px solid #dfdfdf;
   }
 
   .name-form__title {
@@ -76,6 +93,14 @@
     &--wider-line {
       width: 195px;
     }
+
+    &:active {
+      width: 149px;
+    }
+
+    &--wider-line:active {
+      width: 187px;
+    }
   }
 }
 
@@ -93,6 +118,14 @@
 
     &--wider-line {
       width: 329px;
+    }
+
+    &:active {
+      width: 283px;
+    }
+
+    &--wider-line:active {
+      width: 321px;
     }
   }
 }
