@@ -11,7 +11,7 @@
   margin: 0;
   .title();
   color: #000000;
-  border-top: 1px solid #f6f6f6;
+  border-top: 1px solid #dfdfdf;
 }
 
 .feedback-form__button {
@@ -37,6 +37,15 @@
 
   .feedback-form__item {
     padding: 0;
+    border-top: 1px solid #dfdfdf;
+
+    &:first-of-type {
+      border-top: none;
+    }
+
+    &:nth-of-type(3) {
+      border-top: none;
+    }
   }
 
   .feedback-form__item-title {
@@ -44,12 +53,13 @@
     border-top: none;
 
     &--center {
-      padding: 20px 59px 0;
+      width: 300px;
+      padding: 10px 59px 10px 50px;
     }
 
     &--narrow {
       width: 270px;
-      padding: 23px 0 0;
+      padding: 13px 62px 13px 57px;
     }
 
     &::before {
@@ -82,12 +92,12 @@
   }
 
   .feedback-form__item-title {
-    &--narrow {
-      padding: 5px 340px 0;
+    &--center {
+      padding: 20px 50px 20px 47px;
     }
 
-    &--center {
-      padding: 20px 59px 0 34px;
+    &--narrow {
+      padding: 5px 65px 5px;
     }
   }
 

@@ -22,6 +22,21 @@
   &--logo {
     display: none;
   }
+
+  &:hover,
+  &:focus {
+    background-color: #669ec0;
+    cursor: pointer;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    cursor: pointer;
+  }
+}
+
+.site-list__item:active .site-list__item-link {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .site-list__item-link {
@@ -35,22 +50,17 @@
   top: 17px;
   right: 20px;
   display: block;
-  width: 23px;
+  width: 24px;
   height: 22px;
-  background-color: #81b3d2;
+  background-color: rgba(255, 255, 255, 0);
   border: none;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 23px;
-    height: 21px;
-    background-image: url("../img/icon-cross.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
+.site-list__button-cross {
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: #ffffff;
 }
 
 @media (min-width: 768px) {
@@ -63,7 +73,7 @@
 
   .site-list__item {
     min-width: 102px;
-    padding: 21px 28px 16px;
+    padding: 22px 28px 16px;
     font-size: 14px;
     line-height: 26px;
     color: #000000;
@@ -90,10 +100,34 @@
         left: 0;
         width: 102px;
         height: 83px;
-        background-image: url("../img/logo-sedona-mobile.svg");
+        background-image: url("../img/logo-sedona-tablet.svg");
         background-repeat: no-repeat;
         background-position: 0 0;
       }
+    }
+
+    &--current {
+      color: #95877e;
+
+      &:hover,
+      &:focus {
+        color: #73665e;
+        cursor: pointer;
+      }
+
+      &:active {
+        color: #e2dedc;
+        cursor: pointer;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      background-color: rgba(255, 255, 255, 0);
+    }
+
+    &:active {
+      background-color: rgba(255, 255, 255, 0);
     }
   }
 
@@ -101,9 +135,24 @@
     font-size: 14px;
     line-height: 26px;
     color: #000000;
+
+    &:hover,
+    &:focus {
+      color: #81b3d2;
+      cursor: pointer;
+    }
+
+    &:active {
+      color: #b2b2b2;
+      cursor: pointer;
+    }
   }
 
   .site-list__button {
+    display: none;
+  }
+
+  .site-list__button-cross {
     display: none;
   }
 }

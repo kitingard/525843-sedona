@@ -35,13 +35,24 @@
   left: 15px;
   width: 24px;
   height: 16px;
-  background-color: #333333;
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.attraction-form__input:hover + .attraction-form__text::before,
+.attraction-form__input:focus + .attraction-form__text::before {
+  background-color: #e5e5e5;
+}
+
+.attraction-form__input:active + .attraction-form__text::before {
+  background-color: #d5d5d5;
 }
 
 @media (min-width: 768px) {
   .attraction-form {
     order: 3;
-    margin: 15px 0 0;
+    margin: 23px 0 0;
   }
 
   .attraction-form__wrapper {
@@ -49,7 +60,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: flex-start;
-    padding: 46px 31px 29px 97px;
+    padding: 34px 31px 29px 97px;
   }
 
   .attraction-form__wrapper-item {
@@ -59,9 +70,14 @@
 }
 
 @media (min-width: 1200px) {
+  .attraction-form {
+    min-width: 960px;
+    margin-top: 12px;
+  }
+
   .attraction-form__wrapper {
     width: 100%;
-    padding: 45px 0 28px 2px;
+    padding: 42px 0 26px 2px;
   }
 
   .attraction-form__wrapper-item {
