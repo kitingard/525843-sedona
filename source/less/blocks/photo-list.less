@@ -7,10 +7,10 @@
 .photo-list__item {
   display: block;
   padding: 22px 20px 17px;
-  border-top: 1px solid #f6f6f6;
+  border-top: 1px solid #dfdfdf;
 
   &:last-of-type {
-    border-bottom: 1px solid #f6f6f6;
+    border-bottom: 1px solid #dfdfdf;
   }
 }
 
@@ -40,7 +40,6 @@
 }
 
 .photo-list__wrapper-item {
-
   &--like {
     position: relative;
   }
@@ -75,6 +74,11 @@
 
   .photo-list__item {
     padding: 0;
+    border: none;
+
+    &:last-of-type {
+      border-bottom: none;
+    }
   }
 
   .photo-list__img {
@@ -92,7 +96,7 @@
     justify-content: space-between;
     align-items: center;
     margin-top: -5px;
-    padding: 6px 0 15px 19px;
+    padding: 6px 0 16px 19px;
     background-color: #f2f2f2;
 
     &--north {
@@ -143,10 +147,12 @@
 
   .photo-list__wrapper {
     position: absolute;
-    bottom: 5px;
+    bottom: 3px;
     left: 0;
     width: 381px;
-    background-color: rgba(0, 0, 0, 0.6);
+    padding-top: 4px;
+    padding-bottom: 18px;
+    background-color: rgba(0, 0, 0, 0.3);
 
     &--main {
       width: 1181px;

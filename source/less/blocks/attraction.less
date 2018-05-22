@@ -99,8 +99,22 @@
     padding: 0 55px 21px;
   }
 
-  .attraction__img {
+  .attraction__img-wrapper {
+    position: relative;
     width: 800px;
     height: 256px;
+    overflow: hidden;
+  }
+
+  .attraction__img {
+    position: absolute;
+    top: -70px;
+    left: 0;
+    width: 100%;
+    height: 155%;
+
+    &--brige {
+      top: -75px;
+    }
   }
 }

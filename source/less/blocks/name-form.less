@@ -19,7 +19,7 @@
 
 .name-form__text {
   display: block;
-  padding-right: 15px;
+  padding-right: 13px;
   font-size: 14px;
   line-height: 16px;
   color: #333333;
@@ -27,19 +27,20 @@
 }
 
 .name-form__input {
-  width: 172px;
-  height: 56px;
-  padding-left: 20px;
+  width: 166px;
+  height: 48px;
+  padding-left: 16px;
+  margin-left: 5px;
   font-size: 18px;
   line-height: 26px;
   color: #000000;
   font-weight: bold;
   background-color: #f2f2f2;
-  border: none;
+  border: 4px solid transparent;
   outline: none;
 
   &--wider-line {
-    width: 209px;
+    width: 203px;
   }
 
   &:hover,
@@ -48,14 +49,8 @@
   }
 
   &:active {
-    width: 164px;
-    height: 48px;
     border: 4px solid #e5e5e5;
     background-color: #ffffff;
-  }
-
-  &--wider-line:active {
-    width: 201px;
   }
 }
 
@@ -88,17 +83,10 @@
   }
 
   .name-form__input {
-    width: 157px;
+    width: 149px;
+    margin-left: 0;
 
     &--wider-line {
-      width: 195px;
-    }
-
-    &:active {
-      width: 149px;
-    }
-
-    &--wider-line:active {
       width: 187px;
     }
   }
@@ -106,26 +94,18 @@
 
 @media (min-width: 1200px) {
   .name-form {
-    padding: 23px 0 0 75px;
+    padding: 23px 0 0 77px;
   }
 
   .name-form__title {
-    padding-left: 3px;
+    padding-left: 5px;
   }
 
   .name-form__input {
-    width: 291px;
+    width: 286px;
 
     &--wider-line {
-      width: 329px;
-    }
-
-    &:active {
-      width: 283px;
-    }
-
-    &--wider-line:active {
-      width: 321px;
+      width: 324px;
     }
   }
 }
