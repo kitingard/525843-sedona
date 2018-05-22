@@ -3,6 +3,10 @@
   padding: 0 20px;
 }
 
+.attraction-form__wrapper-item {
+  position: relative;
+}
+
 .attraction-form__text {
   position: relative;
   display: block;
@@ -28,16 +32,17 @@
   }
 }
 
-.attraction-form__input:checked + .attraction-form__text::after {
-  content: "";
+.attraction-form__tick {
   position: absolute;
   top: 16px;
   left: 15px;
   width: 24px;
   height: 16px;
-  background-image: url("../img/icon-tick.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  fill: transparent;
+}
+
+.attraction-form__input:checked ~ .attraction-form__tick {
+  fill: #000000;
 }
 
 .attraction-form__input:hover + .attraction-form__text::before,
@@ -47,6 +52,10 @@
 
 .attraction-form__input:active + .attraction-form__text::before {
   background-color: #d5d5d5;
+}
+
+.attraction-form__input:active ~ .attraction-form__tick {
+  fill: #a4a4a4;
 }
 
 @media (min-width: 768px) {
@@ -72,7 +81,7 @@
 @media (min-width: 1200px) {
   .attraction-form {
     min-width: 960px;
-    margin-top: 12px;
+    margin-top: 11px;
   }
 
   .attraction-form__wrapper {
