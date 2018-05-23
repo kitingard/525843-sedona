@@ -14,27 +14,6 @@
   margin-right: 6px;
   background-color: #81b3d2;
 
-  &--tw {
-    position: absolute;
-    top: 17px;
-    left: 14px;
-    fill: #ffffff;
-  }
-
-  &--fb {
-    position: absolute;
-    top: 14px;
-    left: 19px;
-    fill: #ffffff;
-  }
-
-  &--ut {
-    position: absolute;
-    top: 17px;
-    left: 13px;
-    fill: #ffffff;
-  }
-
   &:hover,
   &:focus {
     background-color: #669ec0;
@@ -47,9 +26,30 @@
   }
 }
 
-.social__link:active .social__link--tw,
-.social__link:active .social__link--fb,
-.social__link:active .social__link--ut {
+.social__link-tw {
+  position: absolute;
+  top: 17px;
+  left: 14px;
+  fill: #ffffff;
+}
+
+.social__link-fb {
+  position: absolute;
+  top: 14px;
+  left: 19px;
+  fill: #ffffff;
+}
+
+.social__link-ut {
+  position: absolute;
+  top: 17px;
+  left: 13px;
+  fill: #ffffff;
+}
+
+.social__link:active .social__link-tw,
+.social__link:active .social__link-fb,
+.social__link:active .social__link-ut {
   fill: #88b6d1;
   cursor: pointer;
 }
