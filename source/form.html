@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона - форма отзыва</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <div class="none"><include src="build/img/sprite.svg"></include></div>
@@ -23,7 +23,7 @@
               <li class="site-list__item"><a class="site-list__item-link" href="index.html">Главная</a></li>
               <li class="site-list__item"><a class="site-list__item-link" href="photo.html">Фото и видео</a></li>
               <li class="site-list__item-logo">
-                <a class="site-list__item" href="index.html" title="Главная"></a>
+                <a class="site-list__item-link site-list__item-link--logo" href="index.html" title="Главная"></a>
               </li>
               <li class="site-list__item site-list__item--current"><span>Форма отзыва</span></li>
               <li class="site-list__item"><a class="site-list__item-link" href="https://htmlacademy.ru/intensive/adaptive">HTML academy</a></li>
@@ -71,11 +71,11 @@
               <div class="contacts-form__wrapper">
                 <div class="contacts-form__wrapper-item">
                   <label class="contacts-form__text contacts-form__text--phone" for="contacts-form-phone"><span class="contacts-form__text-invisible">Контактный </span>телефон*:</label>
-                  <input class="contacts-form__input contacts-form__input--phone" type="tel" name="contacts-form-phone" id="contacts-form-phone" placeholder="Введите телефон">
+                  <input class="contacts-form__input contacts-form__input--phone" type="tel" name="contacts-form-phone" id="contacts-form-phone" placeholder="Введите телефон" required="Заполните это поле">
                 </div>
                 <div class="contacts-form__wrapper-item">
                   <label class="contacts-form__text contacts-form__text--email" for="contacts-form-email">Электронная почта*:</label>
-                  <input class="contacts-form__input contacts-form__input--email" type="email" name="contacts-form-email" id="contacts-form-email" placeholder="Введите e-mail">
+                  <input class="contacts-form__input contacts-form__input--email" type="email" name="contacts-form-email" id="contacts-form-email" placeholder="Введите e-mail" required="Заполните это поле">
                 </div>
               </div>
             </fieldset>

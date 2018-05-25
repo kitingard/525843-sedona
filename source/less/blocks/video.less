@@ -1,5 +1,5 @@
 .video {
-  padding: 33px 0 40px;
+  padding: 33px 0 39px;
 }
 
 .video__title {
@@ -27,6 +27,7 @@
 
 .video__file {
   width: 320px;
+  min-height: 201px;
   background-color: #7d837b;
   background-image: url("../img/video-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -148,7 +149,7 @@
     margin: 0;
     padding: 67px 60px 20px;
     margin-bottom: 18px;
-    margin-left: 2px;
+    margin-left: 3px;
   }
 
   .video__title {
@@ -250,7 +251,8 @@
   }
 
   .video__nav-fullscreen-icon {
-    margin-left: -3px;
+    margin-left: -2px;
+    margin-top: 4px;
     fill: #ffffff;
 
     &:hover,
@@ -297,5 +299,9 @@
     &::after {
       margin-top: 22px;
     }
+  }
+
+  .video__nav-fullscreen-icon {
+    margin-left: -4px;
   }
 }
